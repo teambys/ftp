@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ftp-file-manager
+    env: php
+    buildCommand: composer install
+    startCommand: vendor/bin/heroku-php-apache2
+    envVars:
+      - key: PHP_VERSION
+        value: 8.0
