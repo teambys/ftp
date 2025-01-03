@@ -1,4 +1,7 @@
 <?php
+// Set session save path for Render
+ini_set('session.save_path', '/tmp');
+
 session_start();
 
 // Check if the user is logged in
